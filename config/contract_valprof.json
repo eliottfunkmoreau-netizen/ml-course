@@ -1,0 +1,22 @@
+{
+  "hypothesis": "H2_value_profitability_long_only",
+  "rule": "Last NYSE trading day of June from 2012: rank eligible non-financial US stocks by rank(book/market)+rank(gross profit/assets) using first-reported 10-K values filed before that date. Hold 10 names; sell outside top 20 percent; fill from unheld top 10 percent; fill at next open.",
+  "first_year": 2012,
+  "to": "2026-11-06",
+  "universe_size": 1000,
+  "min_price": 5,
+  "min_median_dollar_volume": 20000000,
+  "positions": 10,
+  "notional_usd": 2460,
+  "commission_usd": 0.35,
+  "half_spread_bps": 3,
+  "elevated_mult": 2,
+  "strict_alpha": 0.05,
+  "adapted_alpha": 0.005,
+  "bootstrap_draws": 10000,
+  "seed": 20261108,
+  "deflated_trials": 21,
+  "min_trades": 30,
+  "min_weeks": 200,
+  "known_bias": "Prices exist only for companies listed in 2026. Survivorship favours passing, so a pass cannot be promoted without delisted-price data."
+}

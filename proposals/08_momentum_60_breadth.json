@@ -1,0 +1,18 @@
+{
+ "hypothesis": {
+  "schema": 1,
+  "id": "momentum_60_breadth",
+  "family": "momentum",
+  "model": "linear",
+  "terms": [
+   {
+    "feature": "ret_60",
+    "weight": 1
+   }
+  ],
+  "top_n": 10,
+  "rebalance_days": 5,
+  "market_filter": "breadth_5_20"
+ },
+ "rationale": "Momentum held only when universe median 5 and 20 day returns are positive, the market-state rule in Quant-Arena's best run."
+}

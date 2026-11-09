@@ -1,0 +1,18 @@
+{
+  "hypothesis": "H1_spy_turn_of_month",
+  "rule": "Buy SPY at close of Day -2, sell at close of Day +3; Day -1 is the month's last NYSE trading day. Hold cash at 0 otherwise.",
+  "from": "2006-01-03",
+  "to": "2026-11-06",
+  "notional_usd": 2460,
+  "commission_usd": 0.35,
+  "half_spread_bps": 1,
+  "elevated_mult": 2,
+  "benchmark_exposure": 0.19,
+  "strict_alpha": 0.05,
+  "adapted_alpha": 0.005,
+  "bootstrap_draws": 10000,
+  "seed": 20261108,
+  "deflated_trials": 21,
+  "min_trades": 120,
+  "min_weeks": 100
+}

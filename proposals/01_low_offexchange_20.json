@@ -1,0 +1,18 @@
+{
+ "hypothesis": {
+  "schema": 1,
+  "id": "low_offexchange_20",
+  "family": "offexchange",
+  "model": "linear",
+  "terms": [
+   {
+    "feature": "off_share_20",
+    "weight": -1
+   }
+  ],
+  "top_n": 20,
+  "rebalance_days": 5,
+  "market_filter": "none"
+ },
+ "rationale": "Zhang 2026 reports off-exchange volume share has a negative IC at 1, 5 and 20 days in every year 2021-2026."
+}

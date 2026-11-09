@@ -1,0 +1,18 @@
+{
+ "hypothesis": {
+  "schema": 1,
+  "id": "low_vol_20",
+  "family": "lowrisk",
+  "model": "linear",
+  "terms": [
+   {
+    "feature": "vol_20",
+    "weight": -1
+   }
+  ],
+  "top_n": 20,
+  "rebalance_days": 10,
+  "market_filter": "none"
+ },
+ "rationale": "Low-volatility anomaly."
+}

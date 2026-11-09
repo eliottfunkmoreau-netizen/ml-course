@@ -1,0 +1,30 @@
+{
+ "hypothesis": {
+  "schema": 1,
+  "id": "ridge_flow_only",
+  "family": "ml",
+  "model": "ridge_wf",
+  "terms": [
+   {
+    "feature": "off_share_20",
+    "weight": 1
+   },
+   {
+    "feature": "off_share_chg",
+    "weight": 1
+   },
+   {
+    "feature": "short_ratio_20",
+    "weight": 1
+   },
+   {
+    "feature": "short_ratio_5",
+    "weight": 1
+   }
+  ],
+  "top_n": 20,
+  "rebalance_days": 10,
+  "market_filter": "none"
+ },
+ "rationale": "Walk-forward ridge on alternative-data flow features only, to isolate their contribution."
+}

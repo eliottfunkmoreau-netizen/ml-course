@@ -1,0 +1,38 @@
+{
+ "hypothesis": {
+  "schema": 1,
+  "id": "ridge_all_flow_price",
+  "family": "ml",
+  "model": "ridge_wf",
+  "terms": [
+   {
+    "feature": "ret_5",
+    "weight": 1
+   },
+   {
+    "feature": "ret_20",
+    "weight": 1
+   },
+   {
+    "feature": "ret_120",
+    "weight": 1
+   },
+   {
+    "feature": "vol_20",
+    "weight": 1
+   },
+   {
+    "feature": "off_share_20",
+    "weight": 1
+   },
+   {
+    "feature": "short_ratio_20",
+    "weight": 1
+   }
+  ],
+  "top_n": 20,
+  "rebalance_days": 5,
+  "market_filter": "none"
+ },
+ "rationale": "Walk-forward ridge across price, risk and FINRA flow features, refit monthly on a trailing two years."
+}

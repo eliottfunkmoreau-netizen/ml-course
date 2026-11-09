@@ -1,0 +1,18 @@
+{
+ "hypothesis": {
+  "schema": 1,
+  "id": "offexchange_decline",
+  "family": "offexchange",
+  "model": "linear",
+  "terms": [
+   {
+    "feature": "off_share_chg",
+    "weight": -1
+   }
+  ],
+  "top_n": 20,
+  "rebalance_days": 5,
+  "market_filter": "none"
+ },
+ "rationale": "A falling off-exchange share over the last month implies less retail or dealer-internalised flow, by the same mechanism."
+}

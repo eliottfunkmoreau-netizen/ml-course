@@ -1,0 +1,18 @@
+{
+ "hypothesis": {
+  "schema": 1,
+  "id": "low_short_ratio_20",
+  "family": "shortflow",
+  "model": "linear",
+  "terms": [
+   {
+    "feature": "short_ratio_20",
+    "weight": -1
+   }
+  ],
+  "top_n": 20,
+  "rebalance_days": 5,
+  "market_filter": "none"
+ },
+ "rationale": "High FINRA short-sale share is associated with informed selling and lower forward returns."
+}

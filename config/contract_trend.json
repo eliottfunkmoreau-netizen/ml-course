@@ -1,0 +1,21 @@
+{
+  "hypothesis": "H5_faber_five_sleeve_trend",
+  "rule": "Hold 20 percent each in SPY, EFA, IEF, GSG and VNQ. At the last NYSE trading day of each month hold a sleeve only if its dividend-adjusted close exceeds the mean of its last 10 month-end closes, otherwise cash at 0. Fill at next open, trading only on signal changes or when a held sleeve drifts more than 25 percent from target.",
+  "symbols": ["SPY", "EFA", "IEF", "GSG", "VNQ"],
+  "sma_months": 10,
+  "drift_band": 0.25,
+  "from": "2007-05-01",
+  "to": "2026-11-06",
+  "notional_usd": 2460,
+  "commission_usd": 0.35,
+  "half_spread_bps": 3,
+  "elevated_mult": 2,
+  "strict_alpha": 0.05,
+  "adapted_alpha": 0.005,
+  "bootstrap_draws": 10000,
+  "seed": 20261108,
+  "deflated_trials": 21,
+  "min_trades": 30,
+  "min_weeks": 200,
+  "known_limits": "Benchmark is the same five ETFs equal-weight, rebalanced annually. Cash earns 0. Assumes fractional shares. US-domiciled ETFs may be unavailable to EU retail accounts."
+}

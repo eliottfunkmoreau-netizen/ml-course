@@ -1,0 +1,14 @@
+{
+  "capital_usd": 2500,
+  "slip_bps": 3,
+  "elevated_mult": 2,
+  "trial_budget": 12,
+  "family_quota": 2,
+  "shortlist_max": 3,
+  "seed": 20261108,
+  "stages": {
+    "discovery":  {"from": "2019-07-01", "to": "2022-12-30", "min_trades": 120, "min_weeks": 40},
+    "validation": {"from": "2023-01-03", "to": "2024-12-31", "min_trades": 60,  "min_weeks": 24},
+    "holdout":    {"from": "2025-01-02", "to": "2026-11-06", "min_trades": 30,  "min_weeks": 12}
+  }
+}

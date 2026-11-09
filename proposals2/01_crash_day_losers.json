@@ -1,0 +1,18 @@
+{
+ "hypothesis": {
+  "schema": 1,
+  "id": "crash_day_losers",
+  "family": "crash_reversal",
+  "model": "linear",
+  "terms": [
+   {
+    "feature": "ret_1",
+    "weight": -1
+   }
+  ],
+  "top_n": 10,
+  "rebalance_days": 1,
+  "market_filter": "crash_1d"
+ },
+ "rationale": "Zhang 2026: losers on market-wide crash days revert. Crash day means universe median daily return at or below -2 percent, a convention fixed before any result. Enter next open, hold one session."
+}

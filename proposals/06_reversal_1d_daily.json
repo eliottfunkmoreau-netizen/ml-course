@@ -1,0 +1,18 @@
+{
+ "hypothesis": {
+  "schema": 1,
+  "id": "reversal_1d_daily",
+  "family": "reversal",
+  "model": "linear",
+  "terms": [
+   {
+    "feature": "ret_1",
+    "weight": -1
+   }
+  ],
+  "top_n": 20,
+  "rebalance_days": 1,
+  "market_filter": "none"
+ },
+ "rationale": "One-day reversal; expected to be cost-sensitive at this account size and included to measure that."
+}

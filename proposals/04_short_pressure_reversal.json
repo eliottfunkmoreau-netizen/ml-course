@@ -1,0 +1,22 @@
+{
+ "hypothesis": {
+  "schema": 1,
+  "id": "short_pressure_reversal",
+  "family": "shortflow",
+  "model": "linear",
+  "terms": [
+   {
+    "feature": "short_ratio_5",
+    "weight": 1
+   },
+   {
+    "feature": "ret_5",
+    "weight": -1
+   }
+  ],
+  "top_n": 20,
+  "rebalance_days": 5,
+  "market_filter": "none"
+ },
+ "rationale": "Heavy recent shorting into a falling price may mark liquidity-driven selling that reverts."
+}

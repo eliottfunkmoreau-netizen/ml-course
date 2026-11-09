@@ -1,0 +1,18 @@
+{
+ "hypothesis": {
+  "schema": 1,
+  "id": "low_range_trend",
+  "family": "lowrisk",
+  "model": "linear",
+  "terms": [
+   {
+    "feature": "range_20",
+    "weight": -1
+   }
+  ],
+  "top_n": 10,
+  "rebalance_days": 10,
+  "market_filter": "spy_above_200d"
+ },
+ "rationale": "Low intraday range names held only in a broad uptrend, to test whether timing explains the low-risk premium."
+}

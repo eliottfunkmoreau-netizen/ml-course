@@ -1,0 +1,22 @@
+{
+ "hypothesis": {
+  "schema": 1,
+  "id": "crash_losers_high_vol",
+  "family": "crash_reversal",
+  "model": "linear",
+  "terms": [
+   {
+    "feature": "ret_1",
+    "weight": -1
+   },
+   {
+    "feature": "vol_20",
+    "weight": 0.5
+   }
+  ],
+  "top_n": 10,
+  "rebalance_days": 1,
+  "market_filter": "crash_1d"
+ },
+ "rationale": "Same crash-day reversal, tilted toward names with higher recent volatility, where forced selling should overshoot more."
+}

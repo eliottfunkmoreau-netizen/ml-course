@@ -1,0 +1,18 @@
+{
+ "hypothesis": {
+  "schema": 1,
+  "id": "broad_low_off_share_5",
+  "family": "offexchange",
+  "model": "linear",
+  "terms": [
+   {
+    "feature": "off_share_5",
+    "weight": -1
+   }
+  ],
+  "top_n": 20,
+  "rebalance_days": 10,
+  "market_filter": "none"
+ },
+ "rationale": "Same mechanism on a faster share estimate, with slower rebalancing to limit costs at this account size."
+}
